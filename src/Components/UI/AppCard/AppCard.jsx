@@ -6,8 +6,8 @@ const AppCard = ({ app }) => {
   // console.log(app);
   return (
     <div className="bg-white p-4 rounded-md space-y-4 shadow">
-      <div className="flex justify-center items-center">
-        <img className="rounded-lg max-w-full w-[70%]" src={app.image} alt="" />
+      <div className="flex justify-center items-center p-2.5 rounded-lg bg-[#D9D9D9]">
+        <img className="rounded-lg" src={app.image} alt="" />
       </div>
 
       <h2 className="text-[#001931] font-medium text-xl">{app.title}</h2>

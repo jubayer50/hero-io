@@ -1,29 +1,10 @@
-import React, { useEffect, useState } from "react";
 import AppCard from "../../UI/AppCard/AppCard";
-import { Fa0 } from "react-icons/fa6";
 import { HashLoader } from "react-spinners";
 import { Link } from "react-router";
+import useAppData from "../../../Hooks/useAppData";
 
 const TrendingApps = () => {
-  const [appsData, setAppsData] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchApps = async () => {
-      const res = await fetch("/data.json");
-      const data = await res.json();
-      // console.log(data);
-
-      setTimeout(() => {
-        setAppsData(data);
-        setLoading(false);
-      }, 3000);
-      console.log(loading, "loading");
-    };
-    fetchApps();
-  }, []);
-
-  // console.log(appsData, "from appsData state");
+  const { appsData, loading } = useAppData();
 
   return (
     <div className="bg-[#00000008] py-20">
