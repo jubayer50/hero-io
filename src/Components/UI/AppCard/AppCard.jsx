@@ -3,11 +3,11 @@ import { FaStar } from "react-icons/fa";
 import { GoDownload } from "react-icons/go";
 
 const AppCard = ({ app }) => {
-  console.log(app);
+  // console.log(app);
   return (
-    <div className="bg-white p-4 rounded-sm space-y-4">
+    <div className="bg-white p-4 rounded-md space-y-4 shadow">
       <div className="flex justify-center items-center">
-        <img className="rounded-lg max-w-full w-[50%]" src={app.image} alt="" />
+        <img className="rounded-lg max-w-full w-[70%]" src={app.image} alt="" />
       </div>
 
       <h2 className="text-[#001931] font-medium text-xl">{app.title}</h2>

@@ -5,7 +5,7 @@ import BannerImg from "../../../assets/hero.png";
 
 const Banner = () => {
   return (
-    <div className="bg-[#00000006]">
+    <div className="bg-[#00000008]">
       <div className="max-w-360 mx-auto pt-20 flex gap-10 flex-col">
         <div className="text-center">
           <h2 className="text-[#001931] font-bold text-7xl max-w-149.25 mx-auto leading-21">
